@@ -1,11 +1,9 @@
 ---
 title: "基于Gogs与Drone的CICD平台搭建"
 date: 2018-05-22T11:56:50+08:00
-categories:
-- blog
-tags:
-- MySQL
-- Docker
+Categories:[blog]
+Description:"比较现代化的替代方案"
+Tags:[MySQL,Docker]
 draft: true
 ---
 

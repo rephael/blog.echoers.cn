@@ -2,7 +2,7 @@
 title: "Golang爬虫实践"
 date: 2018-05-22T16:32:22+08:00
 Categories: [blog]
-Description: ""
+Description: "基于go语言的爬虫项目"
 Tags: [Golang]
 draft: false
 ---

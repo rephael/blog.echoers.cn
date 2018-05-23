@@ -1,11 +1,9 @@
 ---
 title: "基于Docker的MySQL主从服务器搭建"
 date: 2018-05-22T12:50:09+08:00
-categories:
-- blog
-tags:
-- MySQL
-- Docker
+Categories:[blog]
+Description:"数据库备份用"
+Tags:[MySQL,Docker]
 draft: true
 ---
 
