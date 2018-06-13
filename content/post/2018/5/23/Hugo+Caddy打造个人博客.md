@@ -7,6 +7,6 @@ Tags: [hugo,caddy]
 draft: false
 ---
 
-Hugo+Caddy打造个人博客
+Hugo+Caddy打造个人博客，自动化构建博客
 <!--more-->
 
