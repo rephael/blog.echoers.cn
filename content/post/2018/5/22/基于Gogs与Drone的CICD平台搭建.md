@@ -4,7 +4,7 @@ date: 2018-05-22T11:56:50+08:00
 Categories: [blog]
 Description: "比较现代化的替代方案"
 Tags: [MySQL,Docker]
-draft: true
+draft: false
 ---
 
 CI/CD是DevOps中不可或缺的流程之一，在项目组建初期，根据以往的经验，选择了gitlab+jenkins的组合。这两个工具有着比较悠久的历史，功能非常完备，是非常值得推荐的工具组合。

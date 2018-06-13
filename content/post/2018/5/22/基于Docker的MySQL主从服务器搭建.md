@@ -4,7 +4,7 @@ date: 2018-05-22T12:50:09+08:00
 Categories: [blog]
 Description: "数据库备份用"
 Tags: [MySQL,Docker]
-draft: true
+draft: false
 ---
 
 基于Docker的MySQL主从数据库搭建
