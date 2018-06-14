@@ -15,17 +15,21 @@ Hugo+Caddy打造个人博客，自动化构建博客系统，提交博客到Gith
 ### Caddy的安装与配置
 #### 二进制安装
 > 在Caddy[官方下载](https://caddyserver.com/download)页面下载可执行文件，记的勾选git与Hugo两个插件，会自编译生成压缩包，里面包含二进制包、安装指导还有自启动脚本等。
+
 * 将二进制包拷贝到系统路径，并付给相应的权限
-```bash
+
+``` bash
 sudo cp /path/to/caddy /usr/local/bin
 sudo chown root:root /usr/local/bin/caddy
 sudo chmod 755 /usr/local/bin/caddy
 ```
 * 设置caddy允许绑定80，443等端口
+
 ```bash
 sudo setcap 'cap_net_bind_service=+ep' /usr/local/bin/caddy
 ```
 * 为Caddy设置专有用户、用户组与文件夹
+
 ```bash
 sudo groupadd -g 33 www-data
 sudo useradd \
@@ -41,18 +45,21 @@ sudo chown -R root:www-data /etc/ssl/caddy
 sudo chmod 0770 /etc/ssl/caddy
 ```
 * 将自己的Caddy配置文件放到/etc/caddy，并修改权限
+
 ```bash
 sudo cp /path/to/Caddyfile /etc/caddy/
 sudo chown www-data:www-data /etc/caddy/Caddyfile
 sudo chmod 444 /etc/caddy/Caddyfile
 ```
 * 创建服务器祝目录
+
 ```bash
 sudo mkdir /var/www
 sudo chown www-data:www-data /var/www
 sudo chmod 555 /var/www
 ```
 * 添加Caddy服务（Centos7版）
+
 ```bash
 wget https://raw.githubusercontent.com/mholt/caddy/master/dist/init/linux-systemd/caddy.service
 sudo cp caddy.service /etc/systemd/system/
@@ -62,11 +69,14 @@ sudo systemctl daemon-reload
 sudo systemctl start caddy.service
 ```
 * 设置Caddy自启动
+
 ```bash
 sudo systenctl enable caddy.service
 ```
 > 至此，Caddy的安装以及配置完成，只需要配置自己的Caddyfile即可。
+
 * 我的配置文件，以此为例修改为自己的即可
+
 ```Caddyfile
 ${your_domain} {
     log /var/log/caddy/access.log
