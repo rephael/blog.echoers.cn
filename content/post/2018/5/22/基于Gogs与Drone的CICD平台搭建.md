@@ -42,7 +42,7 @@ services:
       - /vagrant/mysql-data:/var/lib/mysql
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=z94264f3264t826
+      - MYSQL_ROOT_PASSWORD=${your_pswd}
       - MYSQL_DATABASE=gogs
   drone-server:
     image: drone/drone:latest
