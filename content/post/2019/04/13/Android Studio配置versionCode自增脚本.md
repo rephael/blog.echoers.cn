@@ -54,8 +54,21 @@ android {
     ...
 }
 ```
+#### gradle脚本调试
+> 因为在测试的过程中发现不起作用，所以需要调试脚本来检测是哪里出了问题，这里记录下调试的方法，AS版本3.3.2。
+* Edit Configurations -> Add New Configuration
+![](../../../../images/editConfig.png) 
+* Remote -> OK创建  
+![](../../../../images/createRemote.png) 
+![](../../../../images/gradleDebug.png) 
+* Gradle -> :app -> build -> assembleRelease右键 -> 
+Create... 
+![](../../../../images/createTask.png) 
+* VM options填入
 
-* build.gradle脚本调试技巧
-* Edit Configurations -> Add New Configuration -> Remote -> OK创建
-* Gradle -> :app -> build -> assembleRelease右键 -> Create... -> VM options填入`-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005`生成新的RunConfiguration
-* 执行新的任务，此时会线程阻塞，返回debug原先创建Remote Debug即可开始调试。
+*-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005*
+
+![](../../../../images/vmOptions.png) 
+* 生成新的RunConfiguration
+![](../../../../images/newRunConfig.png)
+* 双击刚才创建的Run Configurations，此时会线程阻塞，返回debug原先创建Remote Debug即可开始调试。
