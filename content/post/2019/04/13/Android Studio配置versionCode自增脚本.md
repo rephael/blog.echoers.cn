@@ -15,6 +15,7 @@ draft: false
 ![](../../../../images/versionProperties.jpg) 
 ![](../../../../images/versionCode.jpg)
 * app项目build.gradle添加如下方法，读取versionCode并自增数值
+
 ```
 def getVersionCode() {
     def versionFile = file('version.properties')
@@ -33,7 +34,9 @@ def getVersionCode() {
     }
 }
 ```
+
 * 通过`getVersionCode()`方法读取`versionCode`
+
 ```
 def currentVersionCode = getVersionCode()
 
