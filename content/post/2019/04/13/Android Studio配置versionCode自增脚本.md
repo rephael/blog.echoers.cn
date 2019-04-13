@@ -56,6 +56,7 @@ android {
 ```
 #### gradle脚本调试
 > 因为在测试的过程中发现不起作用，所以需要调试脚本来检测是哪里出了问题，这里记录下调试的方法，AS版本3.3.2。
+
 * Edit Configurations -> Add New Configuration
 ![](../../../../images/editConfig.png) 
 * Remote -> OK创建  
