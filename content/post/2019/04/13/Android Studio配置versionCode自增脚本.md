@@ -11,8 +11,9 @@ draft: false
 <!--more-->
 
 ### 前言
-* app根目录创建version.properties文件，写入VERSION_CODE=30
+* app根目录创建version.properties文件
 ![](../../../../images/versionProperties.jpg) 
+* 写入VERSION_CODE=30
 ![](../../../../images/versionCode.jpg)
 * app项目build.gradle添加如下方法，读取versionCode并自增数值
 
