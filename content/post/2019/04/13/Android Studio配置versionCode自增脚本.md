@@ -16,7 +16,7 @@ draft: false
 ![](../../../../images/versionCode.jpg)
 * app项目build.gradle添加如下方法，读取versionCode并自增数值
 
-```
+```java
 def getVersionCode() {
     def versionFile = file('version.properties')
     if (versionFile.canRead()) {
@@ -37,7 +37,7 @@ def getVersionCode() {
 
 * 通过`getVersionCode()`方法读取`versionCode`
 
-```
+```javascript
 def currentVersionCode = getVersionCode()
 
 android {
